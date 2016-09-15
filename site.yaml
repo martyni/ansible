@@ -1,0 +1,10 @@
+---
+- name: My environment
+  hosts: common
+  roles:
+     - common
+
+- name: Ansible controller
+  hosts: localhost
+  roles:
+    - ansible

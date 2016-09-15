@@ -1,0 +1,8 @@
+---
+
+- name: Python modules
+  pip: name={{item}} state=latest
+  with_items:
+     - ansible
+  become: yes
+  become_method: sudo
